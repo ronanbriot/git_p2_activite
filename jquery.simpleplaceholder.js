@@ -38,18 +38,4 @@
     }
   };
 
-  $.fn.simplePlaceholder = function(options) {
-    if(document.createElement('input').placeholder == undefined){
-      var config = {
-        placeholderClass : 'placeholding',
-        placeholderData : 'simplePlaceholder.placeholding'
-      };
-
-      if(options) $.extend(config, options);
-      $.extend($.simplePlaceholder, config);
-    }
-
-    return this;
-  };
-
 })(jQuery);
